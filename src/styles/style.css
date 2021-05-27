@@ -36,6 +36,8 @@ body {
   justify-items: center;
   row-gap: 3em;
   grid-template-columns: repeat(6, 1fr);
+  transform-style: preserve-3d;
+  perspective: 5000px;
 }
 
 @media only screen and (max-width: 1850px) {

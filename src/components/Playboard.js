@@ -25,7 +25,6 @@ function Playboard() {
             <div className="card"></div>
             <div className="card"></div>
             <div className="card"></div>
-            <div className="card"></div>
         </div>
     );
 }

@@ -3,12 +3,15 @@ import '../styles/Card.css';
 function Card({img, name}) {
 
     const handleMouseMove = e => {
-        
-        e.currentTarget.style.transform = `rotate(2deg)`;
+        const el = e.currentTarget.getBoundingClientRect();
+        let x = (e.clientX - (el.left+el.width/2))/el.width*2;
+        let y = (e.clientY - (el.top+el.height/2))/el.height*2;
+
+        e.currentTarget.style.transform = `rotate3d(${-y}, ${x}, 0, 6deg)`;
     } 
 
     const handleMouseOut = e => {
-        e.currentTarget.style.transform = `rotate(0deg)`;
+        e.currentTarget.style.transform = '';
     }
 
     return (

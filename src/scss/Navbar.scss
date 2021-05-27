@@ -1,0 +1,18 @@
+.navbar {
+    width: 100vw;
+    height: 5em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient( #757474, #aaaaaa);
+}
+
+@media only screen and (min-width: 800px) {
+    .navbar {
+        top: 0;
+        width: 5em;
+        height: 100vh;
+        background: linear-gradient(270deg,  #757474, #aaaaaa);
+    }    
+
+}

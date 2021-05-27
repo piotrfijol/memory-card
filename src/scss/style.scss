@@ -6,6 +6,7 @@
 
 body {
     padding: 3em;
+    background:#504f4f;
 }
 
 .container {
@@ -13,23 +14,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.header {
-
-    &__title {
-        margin-bottom: 2em;
-    }
-    
-    &__title::after {
-        content: '';
-        width: 50%;
-        transform: translateY(.3em);
-        height: 0.1em;
-        background-color: #000;
-        display: block;
-        margin: auto;
-    }
+    max-width: 2000px;
+    margin: auto;
 }
 
 .playboard {
@@ -38,98 +24,44 @@ body {
     margin-top: 2em;
     display: grid;
     justify-items: center;
-    row-gap: 3em;
-    grid-template-columns: repeat(6, 1fr);
+    row-gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
     transform-style: preserve-3d;
     perspective: 5000px;
 }
 
 
-@media only screen and (max-width: 1850px) {
+@media only screen and (min-width: 600px) {
     .playboard {
-        grid-template-columns: repeat(4, 1fr);
-        width: 70%;
+        row-gap: 3em;
     }
-
 }
 
-@media only screen and (max-width: 1540px) {
+@media only screen and (min-width: 700px) {
     .playboard {
-        width: 85%;
-    }
-
-}
-
-@media only screen and (max-width: 1270px) {
-
-    .card {
-        width: 190px;
-        height: 266px;
-    }
-
-    .playboard {
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-}
-
-@media only screen and (max-width: 980px) {
-
-    .header {
-        margin-top: 1.5em;
-        font-size: .9rem;
-        
-        &-title {
-            margin-bottom: 2em;
-        }
-    }
-
-    .card {
-        width: 130px;
-        height: 182px;
-    }
-
-    .playboard {
+        width: 95%;
         grid-template-columns: repeat(3, 1fr);
-        width: 60%;
     }
-
 }
 
-@media only screen and (max-width: 800px) {
+
+@media only screen and (min-width: 1000px) {
     .playboard {
-        width: 80%;
+        width: 95%;
+        grid-template-columns: repeat(4, 1fr);
     }
-    
 }
 
-
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 1250px) {
     .playboard {
         width: 85%;
-    }
-    
-}
-
-
-@media only screen and (max-width: 500px) {
-    .playboard {
-        width: 80%;
-    }
-    
-    .playboard {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
-
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 1350px) {
     .playboard {
-        width: 100%;
-    }
-    
-    .playboard {
-        grid-template-columns: repeat(2, 1fr);
-        row-gap: 2em;
+        width: 95%;
+        grid-template-columns: repeat(6, 1fr);
     }
 }

@@ -17,14 +17,14 @@ function Playboard() {
                 name="Finn"    
             />
             <Card name="Karta"/>
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
-            <div className="card"></div>
+            <Card name="Karta"/>
+            <Card name="Karta"/>
+            <Card name="Karta"/>
+            <Card name="Karta"/>
+            <Card name="Karta"/>
+            <Card name="Karta"/>
+            <Card name="Karta"/>
+            <Card name="Karta"/>
         </div>
     );
 }

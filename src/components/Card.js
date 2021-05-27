@@ -17,7 +17,7 @@ function Card({img, name}) {
                     <img 
                         src={img} 
                         className="card__content__img" 
-                        alt="Card image"
+                        alt="Card thumbnail"
                     />
                     <p src="" className="card__content__text">
                         {name}

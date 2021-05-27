@@ -13,7 +13,7 @@ function App() {
   return (
   <div className="container">
     <header className="header">
-      <h1 className="header-title">Memory-card</h1>
+      <h1 className="header__title">Memory-card</h1>
     </header>
     <Playboard />
   </div>

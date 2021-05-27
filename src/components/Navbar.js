@@ -1,17 +1,17 @@
 import '../styles/Navbar.css';
 
-function Navbar(props) {
+function Navbar({score, bestScore}) {
 
     return (
         <div className="navbar">
             <div className="scoreboard">
                 <div className="scoreboard__score">
-                    <i class="far fa-star"></i>
-                    <p>5</p>
+                    <i className="far fa-star"></i>
+                    <p>{score}</p>
                 </div>
                 <div className="scoreboard__bestscore">
-                    <i class="fas fa-trophy"></i>
-                    <p>10</p>
+                    <i className="fas fa-trophy"></i>
+                    <p>{bestScore}</p>
                 </div>
             </div>
         </div>

@@ -14,37 +14,6 @@
   margin: auto;
 }
 
-.scoreboard {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  font-family: Roboto;
-}
-.scoreboard__score, .scoreboard__bestscore {
-  width: 50%;
-  color: #FFF;
-  text-shadow: 1px 1px 1px #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 36px;
-}
-.scoreboard__score > *, .scoreboard__bestscore > * {
-  margin-right: 0.3em;
-}
-
-@media only screen and (min-width: 800px) {
-  .scoreboard {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 30%;
-  }
-  .scoreboard__score, .scoreboard__bestscore {
-    height: 50%;
-    flex-direction: column;
-  }
-}
 @media only screen and (min-width: 1200px) {
   .header__title {
     font-size: 32px;
